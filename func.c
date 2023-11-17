@@ -63,3 +63,23 @@ void add_queue(stack_t **h, int n)
 		new_node->prev = tmp;
 	}
 }
+
+/**
+ * free_stack - free doubly linked list
+ * @head: the first node of stack
+ *
+ * Return: Nothing
+ */
+
+void free_stack(stack_t *h)
+{
+	stack_t *tmp;
+
+	tmp = h;
+	while (h)
+	{
+		tmp = h->next;
+		free(h);
+		h = tmp;
+	}
+}
