@@ -66,7 +66,7 @@ void add_queue(stack_t **h, int n)
 
 /**
  * free_stack - free doubly linked list
- * @head: the first node of stack
+ * @h: the first node of stack
  *
  * Return: Nothing
  */
